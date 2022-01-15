@@ -16,7 +16,7 @@ namespace Race_Array
         static int rank = 1;
         static int[] ranking = new int[ARRAY_X];
 
-        static bool Question(int round)
+        static bool Question()
         {
             Console.Write("{0}번째 경기를 시작하시겠습니까? (Y/N) : ", round);
 
@@ -142,7 +142,7 @@ namespace Race_Array
             while (true)
             {
                 round++; // 진행한 경기 횟수 측정
-                if (!Question(round)) // 경기 시작 질문
+                if (!Question()) // 경기 시작 질문
                     return;
 
                 StageReset();
